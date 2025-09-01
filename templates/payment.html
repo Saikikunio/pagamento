@@ -67,7 +67,8 @@
       var socket = io.connect('{{host}}');
       socket.on('payment-confirmed-{{payment_id}}', function(){
         console.log('Payment confirmed');
-      })
+        location.reload();
+      });
     </script>
     </body>
 </html>
